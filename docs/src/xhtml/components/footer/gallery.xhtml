@@ -85,12 +85,9 @@
 						<script type="runnable">
 							ts.ui.Footer.configbutton(function onclick() {
 								ts.ui.Notification.success('Go configure!');
-							}).collabbutton({
-								badge: true,
-								onclick: function() {
-									ts.ui.Notification.success('Go collaborate!');
-								}
-							});
+							}).collabbutton(function() {
+								ts.ui.Notification.success('Go collaborate!');
+							}, true);
 						</script>
 					</figure>
 
